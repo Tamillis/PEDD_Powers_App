@@ -1,0 +1,158 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color: whitesmoke;
+  background-color: #4d4d4d;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --highlight: #646cff;
+  --highlight-bright: #aea1fa;
+  --bg: #4d4d4d;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: var(--highlight);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--highlight-bright);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  text-decoration: underline;
+  line-height: 1.1;
+}
+
+h4 {
+  margin: 0px 0.5rem;
+}
+
+p {
+  margin: 0px 0.5rem;
+}
+
+pre {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  text-align: left;
+  max-width: 100%;
+  
+  white-space: pre-wrap;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.btn {
+  border-left: 2px groove var(--highlight);
+  border-right: 2px groove var(--highlight);
+  border-top: none;
+  border-bottom: none;
+  outline: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: var(--bg);
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: whitesmoke;
+}
+.btn:hover {
+  border-color: var(--highlight-bright);
+}
+.btn:focus,
+.btn:focus-visible {
+  outline:none;
+  border-color: var(--highlight-bright);
+  box-shadow: 2px 2px 0px var(--highlight);
+}
+
+.card {
+  padding: 1rem;
+  border-left: 2px groove var(--highlight);
+  border-right: 2px groove var(--highlight);
+}
+
+.mb-p5rem {
+  margin-bottom: 0.5rem;
+}
+
+.mt-p5rem {
+  margin-top: 0.5rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  border-left: 2px groove var(--highlight);
+  border-right: 2px groove var(--highlight);
+}
+
+.input {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  color: var(--bg);
+  outline: none;
+  border-left: 2px groove var(--highlight);
+  border-right: 2px groove var(--highlight);
+}
+
+label {
+  padding-right: 0.5rem;
+}
+
+.w-66 {
+  width: 66%;
+}
+
+.w-34 {
+  width: 34%;
+}
+
+.w-fit {
+  width: fit-content;
+}
